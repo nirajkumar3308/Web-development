@@ -7,7 +7,9 @@
 </head>
 <body>
     <h1>This is my first HTML Form </h1>
-    <p>Fill this form:</p>
+    <fieldset>
+        <p>Fill this form:</p>
+        <legend><b>HTML Dummy Form</b></legend>
     <form >
         <label for="Name"><b>Enter Name:</b></label>
         <input type="text" id="Name" placeholder="example like:XYZ kumar">
@@ -20,6 +22,10 @@
 <br>
 <label for="Age"> <b>Enter DOB:</b></label>
 <input type="date" id="Age">
+<br>
+<br>
+<label for="file"><b>choose your photo:</b></label>
+<input type="file" name="file" id="file">
 
 <br>
 <br>
@@ -30,11 +36,30 @@
 <input type="checkbox" id="Qualification">B.TECH
 <br>
 <br>
-<input type="submit" value="Final Submit ">
+<label for="branch"><b>choose your branch:</b></label>
+<select name="branch" id="branch">
+<option value="" ></option>
+    <option value="cse">cse</option>
+    <option value="cse-ai">cse-ai</option>
+    <option value="civil">civil</option>
+    <option value="civil-ca">civil-ca</option>
+    <option value="EEE">EEE</option>
+    <option value="Mechenical">Mechenical</option>
+</select>
+<br><br>
+<label for="about"><b>About yourself:</b></label>
+<br>
+<textarea name="about" id="about" cols="40" rows="20" placeholder="Enter text here:"></textarea>
+<br>
+<br>
+<input type="image" name="image" id="image" alt="submit"
+src="https://www.freeiconspng.com/uploads/blue-submit-button-png-3.png" height="40" width="80"
+">
 
 
 
 
     </form>
+    </fieldset>
 </body>
 </html>
